@@ -1,0 +1,75 @@
+.section6 {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  padding: 150px 0 50px;
+  color: white;
+}
+.getInTouch {
+  border-radius: 45px;
+  border: 3px solid #a440ff;
+  background: linear-gradient(
+    234deg,
+    #2902ff -45.36%,
+    rgba(53, 16, 255, 0) 60.21%
+  );
+  backdrop-filter: blur(5.919525146484375px);
+  padding: 60px 50px;
+}
+
+.getInTouch .section-heading {
+  font-weight: 600;
+}
+.section6 .textField {
+  border-radius: 10.529px;
+  border: 0.5px solid #fff;
+  background: transparent;
+  width: 320px;
+  height: 45px;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.section6 .formSubmit {
+  border-radius: 40.387px;
+  background: linear-gradient(
+    95deg,
+    #c30afe -24.78%,
+    #6225ff 43.22%,
+    #01d6e5 123.57%
+  );
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  display: block;
+}
+.real-laptop {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  top: 0;
+  object-position: center;
+}
+@media (max-width: 767px) {
+  .real-laptop {
+    display: none;
+  }
+  .getInTouch {
+    text-align: center;
+  }
+  .section-heading {
+    margin-bottom: 1.5rem !important;
+  }
+  .section6 .formSubmit {
+    margin: auto;
+  }
+}
+@media (max-width: 575px) {
+    .section6 .textField {
+        width: 95%;
+    }
+    .getInTouch {
+        padding: 50px 40px;
+    }
+}

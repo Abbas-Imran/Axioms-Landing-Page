@@ -1,0 +1,129 @@
+.section5 {
+  width: 100%;
+  /* height: 950px; */
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  padding: 150px 0 50px;
+  color: white;
+}
+.section5 .test-head {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+.section5 .subSubtitle {
+  font-size: 14px;
+}
+.section5 .section-heading {
+  font-weight: 600;
+}
+.testonomialMainContainer {
+  width: 130%;
+  background: linear-gradient(99deg, #8214b3 34.61%, #083fcc 91.94%);
+  border-radius: 50px;
+  height: 200px;
+  position: relative;
+}
+.section5 .testHeading-blur {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  font-size: 82px;
+  fill: #fdfdfd;
+  opacity: 0.2;
+  letter-spacing: -4px;
+}
+.quotesImage {
+  fill: #fff;
+  mix-blend-mode: overlay;
+  position: absolute;
+  width: 200px;
+  bottom: -45px;
+  left: 5px;
+  opacity: 0.1;
+}
+.testCard {
+  background: linear-gradient(89deg, #361fff 2.99%, #00daf8 114.21%);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    /* scale: 1.4; */
+    border-radius: 50px;
+    padding: 28px;
+}
+.testCard .testinomial-swiper-card {
+  border-radius: 24px;
+  border: 3px solid rgba(255, 255, 255, 0.77);
+  background: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(10px);
+  height: 100%;
+  position: relative;
+}
+.testCard .testinomial-swiper-card .review-text{
+  font-size: 10px;
+    padding: 30px 10px 15px;
+    text-align: center;
+}
+.testCard .testinomial-swiper-card .Writer{
+  text-align: center;
+  font-size: 14px;
+  color: #E1AB20;
+  font-weight: 500;
+}
+.testCard .testinomial-swiper-card .Designation{
+  font-size: 9px;
+  text-align: center;
+  font-weight: 200;
+}
+.section5 .profilePicture {
+  position: absolute;
+  left: 50%;
+  transform: translate(-55%,-28px);
+}
+.section5 .swiper {
+  scale: 1.4;
+  height: 100%;
+}
+.section5 .userRating {
+  position: absolute;
+  width: 300px;
+  top: 50%;
+  left: 12%;
+  z-index: 4;
+}
+@media (max-width: 991px) {
+  .section5 .section-heading,
+  .section5 .subSubtitle,
+  .section5 .test-head {
+    text-align: center;
+  }
+  .section5 .userRating {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .section5 .swiper {
+    scale: 1.2;
+  }
+  .testonomialMainContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .testonomialMainContainer {
+    width: 100%;
+  }
+  .section5 .swiper {
+    scale: 1;
+  }
+  .quotesImage {
+    display: none;
+  }
+  .section5 .test-head {
+    font-size: 20px;
+  }
+  .section5 .section-heading {
+    font-size: 22px;
+  }
+}

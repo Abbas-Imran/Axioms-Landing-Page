@@ -1,0 +1,91 @@
+.section3 {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  padding: 30px 0 0;
+}
+.section3 .section-header h2,.swiper-heading {
+  background: linear-gradient(
+    98deg,
+    rgba(66, 63, 251, 1) 0%,
+    rgba(101, 9, 103, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+.section3 .serviceContainer {
+  padding: 80px 0 0;
+}
+.servicesCard {
+  border-radius: 45px;
+  border: 3px solid #a440ff;
+  background: linear-gradient(
+    204deg,
+    #2902ff -12.15%,
+    rgba(53, 16, 255, 0) 59.01%
+  );
+  backdrop-filter: blur(5.919525146484375px);
+  position: relative;
+  padding: 30px 22px 0px;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+.servicesCard img {
+  width: 120px;
+  transform: translateY(-65px);
+}
+.servicesCard h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+.section3 .serviceContent {
+  transform: translateY(-55px);
+}
+.section3 .serviceContent ul {
+  /* padding: 0px; */
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: white;
+}
+.section3 .right-container {
+  transform: translateY(-100px);
+}
+.section3 .center-container img {
+  width: 320px;
+  transform: translate(40%, -65px);
+}
+.section3 .right-container .servicesCard img {
+    width: 180px;
+    transform: translate(10px,-73px);
+}
+@media (max-width: 991px) {
+  .section3 .right-container {
+    transform: translate(0px);
+  }
+  .section3 .section-header h2,.swiper-heading {
+    text-align: center;
+  }
+  .section3 .serviceContainer {
+    padding: 40px 0 0;
+}
+}
+@media (max-width: 575px) {
+  .section3 .center-container img {
+    width: 120px;
+    transform: translateY(-65px);
+  }
+}
+.swiper-heading {
+    background: linear-gradient(98deg, #0085FF 4.44%, #650967 74.81%);
+    background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+.section3 .swiper-wrapper img {
+    width: 100px;
+}
+}

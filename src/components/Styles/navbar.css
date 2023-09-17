@@ -1,0 +1,87 @@
+#navbarBelow {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.navbar-brand img {
+    width: 80px;
+}
+.transparent-btn {
+    background: transparent;
+    color: white;
+    border: 0px;
+    /* border: 2px solid white; */
+    padding: 7px 15px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2
+}
+.transparent-btn::before {
+    content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  padding: 2px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #11bbfe, #8c41fb);
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+          mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+.navbar-right {
+    display: flex;
+    gap: 20px;
+}
+.contactImage {
+    background: url(/public/navbarImages/Union.png);
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactImage img {
+    width: 18px;
+}
+#navbarBelow .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#navbarBelow .contact .number, #navbarBelow .contact .context {
+    font-size: 14px;
+    color: white;
+}
+@media (max-width: 991px) {
+    .contactImage {
+        height: 30px;
+        width: 30px;
+    }
+    .contactImage img {
+        width: 13px;
+    }
+    #navbarBelow .contact .number, #navbarBelow .contact .context {
+        font-size: 12px;
+    }
+    .navbar-toggler img {
+        width: 30px;
+    }
+}
+@media (max-width: 767px) {
+    #navbarBelow .contact {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .transparent-btn {
+        display: none;
+    }
+}
